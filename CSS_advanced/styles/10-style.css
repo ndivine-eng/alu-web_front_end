@@ -17,6 +17,8 @@
     --line-height-small: 1.2;
     --line-height-base: 1.5;
     --line-height-big: 1.8;
+    --section-header-align: center;
+    /* New custom property for horizontal alignment */
 }
 
 html {
@@ -43,8 +45,8 @@ h6 {
 }
 
 a {
-    color: var(--color-primary);
     text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
@@ -61,4 +63,8 @@ a:hover {
 
 .section-tagline {
     color: var(--color-primary);
+}
+
+.section-header {
+    text-align: var(--section-header-align);
 }
